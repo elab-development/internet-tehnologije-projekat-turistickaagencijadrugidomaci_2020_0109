@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Aviokarte } from './avio-karte/aviokarte';
 import { ActivatedRoute } from '@angular/router';
+import { KupovinaKarataService } from './kupovina-karata.service';
 
 @Component({
   selector: 'app-avio-karte',
@@ -16,7 +17,7 @@ export class AvioKarteComponent {
  //prihvatanje podataka od roditelja:
 @Input() aviokarteData: Aviokarte[]=[]; // input dekorator dobija child komponenta
 //kako bi pokupila podatke iz roditeljske komponente
-constructor(private route:ActivatedRoute){}
+constructor(private route:ActivatedRoute, private serviceKupovina:KupovinaKarataService){}
 //ispis podataka
 pagedAviokarteList: Aviokarte[]=[]; // aviokarte za jedan page
 pageSize: number = 3; //zelimo da imamo 3 aviokarte po stranici
@@ -37,4 +38,48 @@ ngOnInit(): void {
    //this.aviokarteData = this.aviokarteData;
 
 }
+
+chartItems:Aviokarte[]=[]
+
+
+
+bukirajButton(aviokarta:Aviokarte):void{
+  if(aviokarta.supplies>0){
+    aviokarta.supplies--;
+    this.serviceKupovina.addToChart(aviokarta)
+  }
+}
+
+opozoviButton(aviokarta:Aviokarte): void {
+    aviokarta.supplies++;
+    this.serviceKupovina.removeFromCart(this.chartItems.indexOf(aviokarta));
+    //this.aviokarta.supplies++;
+}
+
+
+
+ukupnaKupovina:number=0;
+
+ukupno():void{
+  this.ukupnaKupovina = this.serviceKupovina.getTotalPrice();
+}
+
+
+buttonColor = 'blue'; // Set your desired default color
+
+// Method to change the button color
+changeButtonColor(newColor: string): void {
+  this.buttonColor = newColor;
+}
+
+
+
+
+
+
+
+
+
+
+
 }

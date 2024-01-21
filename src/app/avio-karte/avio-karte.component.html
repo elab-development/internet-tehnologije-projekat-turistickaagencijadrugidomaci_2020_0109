@@ -11,12 +11,12 @@
        
         <p class="price">CENA: {{aviokarte.price}}</p>
         <p class="supplies">PREOSTALA KOLIČINA: {{aviokarte.supplies}}</p>
-        <button 
+        <button (click)="bukirajButton(aviokarte)"
         > <b>BOOKIRAJ</b></button>
-        <button 
+        <button (click)="opozoviButton(aviokarte)"
         ><b>OPOZOVI</b></button>
     </div>
    
-    <div><button> UKUPNO.</button></div>
+    <div><button (click)="ukupno()"[ngStyle]="{ 'background-color': buttonColor }" >UKUPNO.{{ukupnaKupovina}}</button></div>
 
 </div>

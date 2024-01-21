@@ -9,6 +9,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AvioKarteComponent } from './avio-karte/avio-karte.component';
+import { BookiranjeComponent } from './bookiranje/bookiranje.component';
+import { AranzmanComponent } from './aranzman/aranzman.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { AvioKarteComponent } from './avio-karte/avio-karte.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    AvioKarteComponent
+    AvioKarteComponent,
+    BookiranjeComponent,
+    AranzmanComponent
   ],
   imports: [
     BrowserModule,
