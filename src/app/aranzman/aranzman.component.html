@@ -1,1 +1,156 @@
-<p>aranzman works!</p>
+
+<div class="krug">
+
+
+
+              
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="roditelj1">
+
+
+    
+
+
+    <div class="dete1">
+
+        <h1 id="logo">DREAM HOLIDAYS.</h1>
+
+        
+        <h2 class="velikaslova"><span id="mess">DREAM HOLIDAYS - ARANŽMANI ZA VAŠ SAVRŠEN ODMOR</span>  U PONUDI SAMO OD DANAS!
+        </h2>
+
+        <button (click)="naglaseniStilTeksta()"> POPULARNO: KUBA </button>
+        <div [ngStyle]="textStyle">  
+          
+        <p class="par">
+            
+            <b> REPUBLIKA KUBA</b> je ostrvska zemlja u Karipskom arhipelagu, koju osim glavnog ostrva čini još ostrvo Isla de la Juventud, 
+            uz nekoliko manjih arhipelaga.
+
+          
+<!--
+            Glavni grad <b>HAVANA </b> živi svoj život, zarolbljen u prošlosti, sa 11 miliona stanovnika koji sa nadom gledaju u budućnost. Jedinstven po istorijskom nasleđu, arhitekturi i noćnom životu, 
+            grad će vam pružiti priliku za aktivan odmor sa mogućom realizacijom fakultativnih izleta na lokacije u okruženju.
+
+-->     
+
+        </p>
+
+    </div>
+
+
+
+    </div>
+
+
+    <div class="dete2">
+
+
+        <img id = "sl1" class="slika"  src="../../assets/images/sign.jpg" alt="obrok za poneti" >
+     </div>
+    
+</div>
+
+
+<div class="roditelj2">
+
+   
+
+    <button id="dugme1" (click)="funkcija()">Zakaži aranžman</button>
+    <button id="dugme2" (click)="funkcija_novo()">novo</button>
+
+
+
+
+
+</div>
+
+
+
+<div class="roditelj21">
+
+    <div class="d1">
+
+    
+    <h2 class="meni"> KUBA JANUAR 2024. </h2>
+        <p>   <span style="color: rgb(64, 0, 255); font-weight: bold; border: 2px solid #7707bd; padding: 10px;">870 eur</span></p>
+        <button  [ngClass]="{'clicked': isClicked}" (click)="promenaBoje()">BUKIRAJ ANGAZOVANJE</button> <!-- ngClass je atributska direktiva koja
+        dodaje neku KLASU elementu ako je ispunjen neki uslov. Na primer, ako je dugme kliknuto, primenjuje se css koji vazi za tu klasu.--> 
+    </div>
+    <div class="d1">
+    
+
+    <h2 class="meni"> AUSTRIJA ZIMA 2024. </h2>
+        <p>   <span style="color: rgb(64, 0, 255); font-weight: bold; border: 2px solid #7707bd; padding: 10px;">720 eur</span></p>
+        <button [ngClass]="{'clicked1':isClicked1}" (click)="promenaBoje1()">BUKIRAJ ANGAZOVANJE</button>
+    </div>
+    <div class="d1">
+
+
+    <h2 class="meni"> SRBIJA ZIMA 2024. </h2>
+    <p>   <span style="color: rgb(64, 0, 255); font-weight: bold; border: 2px solid #7707bd; padding: 10px;">570 eur</span></p>
+        <button [ngClass]="{'clicked2':isClicked2}" (click)="promenaBoje2()">BUKIRAJ ANGAZOVANJE</button>
+    </div>
+    <div class="d1">
+    
+
+    <h2 class="meni"> GRČKA LETO 2024. </h2>
+    <p>  <span style="color: rgb(64, 0, 255); font-weight: bold; border: 2px solid #7707bd; padding: 10px;">540 eur</span></p>
+        <button [ngClass]="{'clicked3':isClicked3}" (click)="promenaBoje3()">BUKIRAJ ANGAZOVANJE</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="roditelj3">
+
+    <div class="d2">
+    <img src="../../assets/images/kuba.jpg" alt="dorucak" id="s11" class="meni1">
+    
+
+    </div>
+    <div class="d2">
+    <img src="../../assets/images/austrija_zima.jpg" alt="kafa" id="s22" class="meni1">
+
+    
+    </div>
+    <div class="d2">
+    <img src="../../assets/images/kopaonik.jpg" alt="ice-kafa" id="s33" class="meni1">
+
+    
+    </div>
+    <div class="d2">
+    <img src="../../assets/images/santorini.jpg" alt="kasa" id="s44" class="meni1">
+
+    
+
+</div>
+
+
+
+
+
+</div>
