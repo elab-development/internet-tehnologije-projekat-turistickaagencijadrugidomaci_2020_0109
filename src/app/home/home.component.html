@@ -31,7 +31,7 @@
 
 
 
-<input type="button" class="dugme" value="NOVO!"  id="dugme1" > 
+<input type="button" class="dugme" value="NOVO!"  id="dugme1" (click)="prikupiPodatke()"> 
 </header>
 
 
@@ -66,7 +66,7 @@
 
 <div  class="slika1">
 
-<img class="planina"> <!-- Primer za string interpolation!!!-->
+<img class="planina" src="{{selektovanaSlika}}"> <!-- Primer za string interpolation!!!-->
 
 
 </div>
@@ -82,9 +82,9 @@
 
       
 
-    <li > <img  id="s1" src="../../assets/images/planina1.jpg"  ></li>
-    <li ><img  id="s2" src="../../assets/images/planina2.jpg"   ></li>                                              
-    <li ><img  id="s3" src="../../assets/images/skijas.jpg"  ></li>
+    <li > <img  id="s1" src="../../assets/images/planina1.jpg" (click)="prikaziSliku('../../assets/images/planina1.jpg')"  ></li>
+    <li ><img  id="s2" src="../../assets/images/planina2.jpg"  (click)="prikaziSliku('../../assets/images/planina2.jpg')" ></li>                                              
+    <li ><img  id="s3" src="../../assets/images/skijas.jpg" (click)="prikaziSliku('../../assets/images/skijas.jpg')" ></li>
     
        
 
