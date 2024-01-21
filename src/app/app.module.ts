@@ -8,13 +8,15 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { AvioKarteComponent } from './avio-karte/avio-karte.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    AvioKarteComponent
   ],
   imports: [
     BrowserModule,
