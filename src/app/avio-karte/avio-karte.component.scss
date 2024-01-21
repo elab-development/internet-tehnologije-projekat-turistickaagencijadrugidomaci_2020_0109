@@ -1,0 +1,79 @@
+.aviokarte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+  }
+
+
+
+
+  
+  .aviokarte div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05); //kad dotaknes, on se pomera
+    }
+  
+    p {
+      margin: 5px 0;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    
+      .description {
+        font-size: 14px;
+        color: #555;
+      }
+    
+      .price {
+        font-size: 16px;
+        color: #007bff; // Blue color, you can change it
+      }
+    
+      .supplies {
+        font-size: 14px;
+        color: #a7289c; // Green color, you can change it
+      }
+
+      .krug{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        background:#cd19dd;
+       clip-path: circle(40% at left);
+    }
+    
+     
+
+
+  }
+  .krug{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:#cd19dd;
+   clip-path: circle(40% at left);
+}

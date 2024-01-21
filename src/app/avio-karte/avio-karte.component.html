@@ -1,1 +1,22 @@
-<p>avio-karte works!</p>
+<div class="krug">
+        
+</div>
+ 
+<div class="aviokarte">
+    <div *ngFor="let aviokarte of pagedAviokarteList">
+        <p class="title">{{aviokarte.title |uppercase}}</p>
+        <p class="description"> {{aviokarte.description}}</p>
+      
+        <img [src]="aviokarte.image" alt="Deskripcija umesto slike">
+       
+        <p class="price">CENA: {{aviokarte.price}}</p>
+        <p class="supplies">PREOSTALA KOLIČINA: {{aviokarte.supplies}}</p>
+        <button 
+        > <b>BOOKIRAJ</b></button>
+        <button 
+        ><b>OPOZOVI</b></button>
+    </div>
+   
+    <div><button> UKUPNO.</button></div>
+
+</div>
