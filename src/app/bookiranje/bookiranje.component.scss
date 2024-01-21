@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+*{
+
+
+    
+font-family: "Monsterrat", sans-serif;
+color: #24252A;
+
+
+}
+
+
+
+
+.roditelj1{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+
+
+
+.forma{
+max-width:400px;/*350*/
+
+}
+.kviz{
+
+line-height:10px;
+font-weight:800;
+font-size:10px;
+margin-top:30px;
+margin-left:100px;
+margin-right:100px;
+
+
+    
+}
+
+.slika{
+    width:450px;
+    height:450px;
+}
+.slika:hover{
+    transform: translateY(-15px);
+}
+
+
+
+.krug{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:#cd19dd;
+   clip-path: circle(50% at right);
+
+
+
+
+
+}
+.krug2{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:white;
+   clip-path: circle(30% at right);
+
+
+
+
+
+}
+
+.krug3{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background:#cd19dd;
+   clip-path: circle(10% at right);
+
+
+
+
+
+}
+
+
+
+.logo {
+    width: 50px; /* Set the width of your logo image */
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+
+
+.order{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 900;
+    color:#520efd;
+    font-size:70px;
+}
+
+.polje{
+border-color:#520efd;
+background-color:none;
+height:50px;
+width:300px;
+border-radius:50px;
+margin-bottom:22px;
+
+
+
+}
+
+
+#placanje{
+    border-color:#cd19dd;
+    background-color:white;
+    color:#cd19dd;
+    width:100px;
+    height:20px;
+    border-radius:50px;
+}
+
+
+
+
+#dugme_submit{
+position:relative;
+width:300px;
+height: 50px;
+cursor:pointer;
+border-radius:50px;
+border-color:#520efd;
+background-color:white;
+color:#520efd;
+font-weight: 900;
+
+
+
+
+}
+
+#dugme_submit:hover{
+border-color:#cd19dd;
+background-color:#cd19dd;
+color:white;
+}
+
+
+.roditelj2{
+    display:flex;
+    justify-content:center;
+
+}
+
+
+
+@media screen and (max-width:767px){
+
+
+
+.krug{
+    background-color:#cd19dd;
+    clip-path:circle(50% at bottom);
+}
+.krug2{
+    background-color:white;
+    clip-path:circle(35% at bottom);
+}
+.krug3{
+    background-color:#cd19dd;
+    clip-path:circle(15% at bottom);
+}
+
+
+.slika{
+    width:0px;
+    height:0px;
+}
+
+.kviz{
+font-size:7px;
+line-height:10px;
+margin-left:40px;
+/*margin-top:30px;*/
+margin-right:10px;
+}
+
+.forma{
+    width:70px;
+    margin-left:20px;
+    margin-right:40px;
+}
+
+.order{
+    margin-top:0px;
+    font-size:30px;
+
+}
+
+.polje{
+    
+    width:100px;
+    height:20px;
+}
+
+
+#dugme_submit{
+
+    width:200px;
+    height: 50px;
+    
+
+}
+    
+.roditelj2{
+
+    margin-left:20px;
+    
+}
+
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+.slika{
+    width:300px;
+    height:300px;
+}
+
+.order{
+    
+    font-size:50px;
+}
+
+.polje{
+    width:200px;
+}
+.kviz{
+    margin-right:20px;
+    margin-top:20px;
+    margin-left:10px;
+}
+}
